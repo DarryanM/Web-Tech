@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="CSS/StyleSheet.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
+<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+<script src="JS/javascript.js"></script>
+<script src="JS/wb.sitesearch.min.js"></script>
+
+
+</head>
+
+<body
+    class="bgImage1"
+    onload="ShowObject('wb_menu1', 0);
+            ShowObject('wb_menu2', 0);
+            ShowObject('wb_menu3', 0);
+            ShowObject('wb_menu4', 0);
+            ShowObject('wb_menu5', 0);
+            ShowObject('wb_menu6', 0);
+            return false;
+            init()" >
+            <! Menu Code taken from WYSIWYG >
+
+
+    <header class="header top-header" style="background-image: url('images/header/pxfuel.jpg');">
+        <div class="logo">
+            <a href="index.html">
+            <img src="images/header/OutterSpace_logo1.png" alt="Logo" width="120" height="120">
+            </a>
+        </div>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="#contact">Contact</a>
+            <a href="about.html">About</a>
+            <br>
+            <form  name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
+            <input type="text" id="SiteSearch1"  name="SiteSearch1" value="" spellcheck="false" placeholder="Search this website" role="searchbox"></form>
+            <div id="SiteSearch1-dialog" title="Search results"></div>
+        </div>
+        <div class="top-header">
+             <br>
+             <h2>OUTTER SPACE</h2>
+        </div>
+
+    </header>
+
+
+    <div class="row" >
+        <div class="col-3 col-s-3 menu" onfocusout="ShowObjectWithEffect('wb_menu1', 0, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 0, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 0, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 0, 'slideleft', 800);ShowObjectWithEffect('wb_menu5', 0, 'slideup', 800);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 800);return false;">
+            <div id="wb_MainMenu">
+                <a href="" onclick="ShowObjectWithEffect('wb_menu1', 1, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 1, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 1, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 1, 'slideleft', 800);return false;">
+                    <img class="hover" src="images/menu/img0001_hover.png" alt="" style="border-width:0;width:132px;height:45px;">
+                        <span class="default">
+                            <img src="images/menu/img0001.png" id="MainMenu" alt="" style="width:132px;height:45px;">
+                        </span>
+                </a>
+            </div>
+            <div id="wb_menu1">
+                <a href="http://" onmouseover="ShowObjectWithEffect('wb_menu5', 1, 'slidedown', 500);ShowObjectWithEffect('wb_menu6', 1, 'slideup', 500);return false;">
+                    <img class="hover" src="images/menu/img0002_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
+                        <span class="default wb_menu1_size">
+                            <img src="images/menu/img0002.png" id="menu1" alt="">
+                        </span>
+                </a>
+            </div>
+            <div id="wb_menu2">
+                <a href="gallery.html" onmousemove="ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);return false;">
+                    <img class="hover" src="images/menu/img0003_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
+                        <span class="default wb_menu1_size">
+                            <img src="images/menu/img0003.png" id="menu2" alt="">
+                        </span>
+                </a>
+            </div>
+            <div id="wb_menu3">
+                <a href="game.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
+                    <img class="hover" src="images/menu/img0004_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
+                <span class="default wb_menu1_size">
+                    <img src="images/menu/img0004.png" id="menu3" alt="">
+                </span>
+                </a>
+            </div>
+            <div id="wb_menu4">
+                <a href="about.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
+                    <img class="hover" src="images/menu/img0005_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
+                        <span class="default wb_menu1_size">
+                            <img src="images/menu/img0005.png" id="menu4" alt="">
+                        </span>
+                </a>
+            </div>
+            <div id="wb_menu6">
+                <a href="sun.html">
+                    <img class="hover" src="images/menu/img0007_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
+                        <span class="default wb_menu2_size">
+                            <img src="images/menu/img0007.png" id="menu6" alt="">
+                        </span>
+                </a>
+            </div>
+            <div id="wb_menu5">
+                <a href="planets.html">
+                    <img class="hover" src="images/menu/img0008_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
+                        <span class="default wb_menu2_size">
+                            <img src="images/menu/img0008.png" id="menu5" alt="">
+                        </span>
+                </a>
+            </div>
+    </div>
+
+    <div>
+        <div class="textbox1 center box">
+            <h1>Beyond Our Skies</h1>
+            <video id="autoplay" muted playsinline loop width="400" height="350">
+                <source src="video/deep_space_loop.mp4" type="video/mp4">
+            </video>
+
+                <script> document.getElementById('autoplay').play(); </script>
+            <p>Space is a cold but amazing place. Very few people will get to experience what its like outside our planet Earth.</p>
+            <p> Though we may not be able to experience it, tat shouldn't stop us from knowing about it. </p>
+            <p> Join me as we go through some of the most amazing objects in our Solar System.</p>
+        </div>
+
+    </div>
+
+    <div class="pg-footer">
+            <footer class="footer">
+
+                <div class="footer-content">
+                    <div class="footer-content-column">
+                        <div class="footer-logo">
+                            <a class="footer-logo-link" href="#index.html">
+                                <img src="images/header/OutterSpace_logo1.png" alt="LOGO" width="200" height="200">
+                                <span class="hidden-link-text">LOGO</span>
+                                <h1>OUTTER SPACE</h1>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-content-column">
+                        <div class="footer-menu">
+                            <h2 class="footer-menu-name"> Quick Links</h2>
+                            <ul id="menu-get-started" class="footer-menu-list">
+                                <li><a href=""></a></li>
+                                <li><a href="SolarSystem.html">SOLAR SYSTEM</a></li>
+                                <li><a href="planets.html"> -- Planets</a></li>
+                                <li><a href="sun.html"> -- Sun</a></li>
+                                <li><a href="gallery.html">PHOTO GALLERY</a></li>
+                                <li><a href="game.html">ASTEROID GAME</a></li>
+                                <li><a href="about.html">ABOUT US</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-content-column">
+                        <div class="footer-menu">
+                            <h2 class="footer-menu-name"> CONTACT INFO</h2>
+                            <ul id="menu-company" class="footer-menu-list">
+                                <li>#63 Bridge Street,</li>
+                                <li>Castries,</li>
+                                <li>Saint Lucia</li>
+                                <li> </li>
+                                <li> <a href="tel:758-459-9820" target="_self"> 758-459-9820 </a></li>
+                                <li><a href="mailto:info@outterspace.com">Email: info@outterspace.com</a></li>
+                            </ul>
+                        </div>
+                        <br>
+                        <p> Subscribe to Our Monthly Newsletter</p>
+                        <div class="subscribe">
+                            <input type="email" class="sub__email" placeholder="Enter your email address" />
+                            <button class="sub__button">Submit</button>
+                        </div>
+                    </div>
+                    <div class="footer-content-column">
+                        <div class="footer-menu">
+                            <h2 class="footer-menu-name"> Legal</h2>
+                            <ul id="menu-quick-links" class="footer-menu-list">
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="#">Privacy Notice</a>
+                                </li>
+                                <li>
+                                    <a target="_blank" rel="noopener noreferrer" href="#">Terms of Use</a>
+                                </li>
+                                <li>
+                                    <a href="#">Credits</a>
+                                </li>
+                                <li>
+                                    <a href="#"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-content-column">
+                        <div class="footer-menu">
+                            <br>
+                            <h2 class="footer-call-to-action-title"> Social Media</h2>
+                                <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+                                <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+                                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+                        </div>
+
+
+                    </div>
+
+
+
+
+            </footer>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+

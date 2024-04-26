@@ -118,7 +118,9 @@ html {
     background-size: cover;
     resize: both;
     overflow-y: scroll;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
+    height: 100%;
+    background-position: center;
 }
 
 .bgImage2 {
@@ -126,8 +128,11 @@ html {
     background-size: cover;
     resize: both;
     overflow-y: scroll;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:100% 100vh;
+    height: 100%;
+    background-position: center;
+
 }
 
 .bgImage3 {
@@ -135,8 +140,10 @@ html {
     background-size: cover;
     resize: both;
     overflow-y: scroll;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:100% 100vh;
+    height: 100%;
+    background-position: center;
 }
 
 .bgImage4 {
@@ -144,8 +151,10 @@ html {
     background-size: cover;
     resize: both;
     overflow-y: scroll;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:100% 100vh;
+    height: 100%;
+    background-position: center;
 }
 
 .bgImage5 {
@@ -153,8 +162,10 @@ html {
     background-size: cover;
     resize: both;
     overflow-y: scroll;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-size:100% 100vh;
+    height: 100%;
+    background-position: center;
 }
 
 

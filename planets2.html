@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="CSS/StyleSheet.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
-<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="JS/javascript.js"></script>
-<script src="JS/wb.sitesearch.min.js"></script>
-
-
+    <title>Earth and Mars</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="JS/javascript.js"></script>
+    <script src="JS/wb.sitesearch.min.js"></script>
 </head>
 
 <body
@@ -36,7 +35,7 @@
         </div>
         <div class="header-right">
             <a class="active" href="index.html">Home</a>
-            <a href="#contact">Contact</a>
+            <a href="credits.html">Credits</a>
             <a href="about.html">About</a>
             <br>
             <form  name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
@@ -50,65 +49,24 @@
 
     </header>
 
-
-    <div class="row" >
-        <div class="col-3 col-s-3 menu" onfocusout="ShowObjectWithEffect('wb_menu1', 0, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 0, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 0, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 0, 'slideleft', 800);ShowObjectWithEffect('wb_menu5', 0, 'slideup', 800);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 800);return false;">
-            <div id="wb_MainMenu">
-                <a href="" onclick="ShowObjectWithEffect('wb_menu1', 1, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 1, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 1, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 1, 'slideleft', 800);return false;">
-                    <img class="hover" src="images/menu/img0001_hover.png" alt="" style="border-width:0;width:132px;height:45px;">
-                        <span class="default">
-                            <img src="images/menu/img0001.png" id="MainMenu" alt="" style="width:132px;height:45px;">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu1">
-                <a href="http://" onmouseover="ShowObjectWithEffect('wb_menu5', 1, 'slidedown', 500);ShowObjectWithEffect('wb_menu6', 1, 'slideup', 500);return false;">
-                    <img class="hover" src="images/menu/img0002_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0002.png" id="menu1" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu2">
-                <a href="gallery.html" onmousemove="ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);return false;">
-                    <img class="hover" src="images/menu/img0003_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0003.png" id="menu2" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu3">
-                <a href="game.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
-                    <img class="hover" src="images/menu/img0004_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                <span class="default wb_menu1_size">
-                    <img src="images/menu/img0004.png" id="menu3" alt="">
-                </span>
-                </a>
-            </div>
-            <div id="wb_menu4">
-                <a href="about.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
-                    <img class="hover" src="images/menu/img0005_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0005.png" id="menu4" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu6">
-                <a href="sun.html">
-                    <img class="hover" src="images/menu/img0007_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
-                        <span class="default wb_menu2_size">
-                            <img src="images/menu/img0007.png" id="menu6" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu5">
-                <a href="planets.html">
-                    <img class="hover" src="images/menu/img0008_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
-                        <span class="default wb_menu2_size">
-                            <img src="images/menu/img0008.png" id="menu5" alt="">
-                        </span>
-                </a>
-            </div>
+     <div>
+        <ul class="top-level-menu">
+            <li>
+                <a href="index.html">HOME</a>
+                <ul class="second-level-menu">
+                    <li>
+                        <a href="solarsystem.html">SOLAR SYSTEM</a>
+                        <ul class="third-level-menu">
+                            <li><a href="planets.html">Planets</a></li>
+                            <li><a href="sun.html">Sun</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">PHOTO GALLERY</a></li>
+                    <li><a href="game.html">ASTEROID GAME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div>
@@ -124,25 +82,23 @@
                     <a href="planets4.html">URANUS</a>
                     <a href="planets4.html">NEPTUNE</a> </article> </b>
             </p>
-            </div>
-            <br>
-            <p style="font-size:20px; font-weight:bold;"> EARTH</p>
-            <p style="display: flex;"> <a href="href="#" onClick="window.open('https://solarsystem.nasa.gov/gltf_embed/2393/','EARTH','resizable,height=260,width=370'); return false;"><img src="images/planets/earth.png" alt="Planet Earth" width="250" height="180"></a>
-                The 3rd planet from the sun and our home, at a distance of 147 million kilometers or 35.98 million miles.
-                It takes 365 days to orbit the sun at a speed of 67,000 mph (107,000 km/h). Sunlight 8 minutes and 20 seconds to travel to Earth.
-                Earth is the only know planet in our solar system that supports life. 71% of the surface is covered by water and 29% by land.
-                The atmosphere is 78% nitrogen, 21% oxygen, 0.9% argon, and 0.1% other gases.
-                Earth has a diameter of 7,926 miles (about 12,756 kilometers), a little less than twice the size of MARS.
-            </p>
-            <br>
-            <p style="font-size:20px; font-weight:bold;"> MARS</p>
-            <p style="display: flex;"> <<a href="href="#" onClick="window.open('https://solarsystem.nasa.gov/gltf_embed/2372/','MARS','resizable,height=260,width=370'); return false;"><img src="images/planets/mars.png" alt="Planet Mars" width="250" height="180"></a>  <br>
-               The Red planet. 4th planet which is 227.9 million kilometers or 141.6 million miles away from the Sun. Light from the sun takes 13 minutes to get to this planet.
-               With a diameter of 4,222 miles (6,794 km), Mars is about half the size of Earth. The gravity is about 38% that of Earth. Mars has a reddish look becasue of oxidization
-               or rusting, of the iron in the rocks on the surface. This rust gets eventually swept up into the atmposhere. A day on Mars takes 24.6 hours, while a complete orbit around the sun takes 687 days.
-
-            </p>
-            <article>
+                </div><br>
+                <p style="font-size:20px; font-weight:bold;">EARTH</p>
+                <p style="display: flex;"><a href="href=" onclick="window.open('https://solarsystem.nasa.gov/gltf_embed/2393/','EARTH','resizable,height=260,width=370'); return false;"><img src="images/planets/earth.png" alt="Planet Earth" width="250" height="180"></a>
+                    The 3rd planet from the sun and our home, at a distance of 147 million kilometers or 35.98 million miles.
+                    It takes 365 days to orbit the sun at a speed of 67,000 mph (107,000 km/h). Sunlight 8 minutes and 20 seconds to travel to Earth.
+                    Earth is the only know planet in our solar system that supports life. 71% of the surface is covered by water and 29% by land.
+                    The atmosphere is 78% nitrogen, 21% oxygen, 0.9% argon, and 0.1% other gases. Earth has a diameter of 7,926 miles (about 12,756 kilometers),
+                    a little less than twice the size of MARS.
+                </p>
+                <br>
+                <p style="font-size:20px; font-weight:bold;">MARS</p>
+                <p style="display: flex;">&lt;<a href="href=" onclick="window.open('https://solarsystem.nasa.gov/gltf_embed/2372/','MARS','resizable,height=260,width=370'); return false;"><img src="images/planets/mars.png" alt="Planet Mars" width="250" height="180"></a><br>
+                    The Red planet. 4th planet which is 227.9 million kilometers or 141.6 million miles away from the Sun.
+                    Light from the sun takes 13 minutes to get to this planet. With a diameter of 4,222 miles (6,794 km), Mars is about half the size of Earth.
+                    The gravity is about 38% that of Earth. Mars has a reddish look becasue of oxidization or rusting, of the iron in the rocks on the surface.
+                    This rust gets eventually swept up into the atmposhere. A day on Mars takes 24.6 hours, while a complete orbit around the sun takes 687 days.</p>
+                <article>
                 <a href="planets.html" class="previous">&laquo; Previous</a>
                 <a href="planets3.html" class="next">Next &raquo;</a>
             </article>
@@ -168,7 +124,7 @@
                             <h2 class="footer-menu-name"> Quick Links</h2>
                             <ul id="menu-get-started" class="footer-menu-list">
                                 <li><a href=""></a></li>
-                                <li><a href="SolarSystem.html">SOLAR SYSTEM</a></li>
+                                <li><a href="solarsystem.html">SOLAR SYSTEM</a></li>
                                 <li><a href="planets.html"> -- Planets</a></li>
                                 <li><a href="sun.html"> -- Sun</a></li>
                                 <li><a href="gallery.html">PHOTO GALLERY</a></li>

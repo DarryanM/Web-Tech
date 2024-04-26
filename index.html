@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="CSS/StyleSheet.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
-<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="JS/javascript.js"></script>
-<script src="JS/wb.sitesearch.min.js"></script>
-
-
+    <title>Home: Outter Space</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="JS/javascript.js"></script>
+    <script src="JS/wb.sitesearch.min.js"></script>
 </head>
 
 <body
@@ -36,7 +35,7 @@
         </div>
         <div class="header-right">
             <a class="active" href="index.html">Home</a>
-            <a href="#contact">Contact</a>
+            <a href="credits.html">Credits</a>
             <a href="about.html">About</a>
             <br>
             <form  name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
@@ -51,74 +50,29 @@
     </header>
 
 
-    <div class="row" >
-        <div class="col-3 col-s-3 menu" onfocusout="ShowObjectWithEffect('wb_menu1', 0, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 0, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 0, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 0, 'slideleft', 800);ShowObjectWithEffect('wb_menu5', 0, 'slideup', 800);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 800);return false;">
-            <div id="wb_MainMenu">
-                <a href="" onclick="ShowObjectWithEffect('wb_menu1', 1, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 1, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 1, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 1, 'slideleft', 800);return false;">
-                    <img class="hover" src="images/menu/img0001_hover.png" alt="" style="border-width:0;width:132px;height:45px;">
-                        <span class="default">
-                            <img src="images/menu/img0001.png" id="MainMenu" alt="" style="width:132px;height:45px;">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu1">
-                <a href="http://" onmouseover="ShowObjectWithEffect('wb_menu5', 1, 'slidedown', 500);ShowObjectWithEffect('wb_menu6', 1, 'slideup', 500);return false;">
-                    <img class="hover" src="images/menu/img0002_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0002.png" id="menu1" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu2">
-                <a href="gallery.html" onmousemove="ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);return false;">
-                    <img class="hover" src="images/menu/img0003_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0003.png" id="menu2" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu3">
-                <a href="game.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
-                    <img class="hover" src="images/menu/img0004_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                <span class="default wb_menu1_size">
-                    <img src="images/menu/img0004.png" id="menu3" alt="">
-                </span>
-                </a>
-            </div>
-            <div id="wb_menu4">
-                <a href="about.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
-                    <img class="hover" src="images/menu/img0005_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0005.png" id="menu4" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu6">
-                <a href="sun.html">
-                    <img class="hover" src="images/menu/img0007_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
-                        <span class="default wb_menu2_size">
-                            <img src="images/menu/img0007.png" id="menu6" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu5">
-                <a href="planets.html">
-                    <img class="hover" src="images/menu/img0008_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
-                        <span class="default wb_menu2_size">
-                            <img src="images/menu/img0008.png" id="menu5" alt="">
-                        </span>
-                </a>
-            </div>
-    </div>
+<ul class="top-level-menu">
+    <li>
+        <a href="index.html">HOME</a>
+        <ul class="second-level-menu">
+            <li>
+                <a href="solarsystem.html">SOLAR SYSTEM</a>
+                <ul class="third-level-menu">
+                    <li><a href="planets.html">Planets</a></li>
+                    <li><a href="sun.html">Sun</a></li>
+                </ul>
+            </li>
+            <li><a href="gallery.html">PHOTO GALLERY</a></li>
+            <li><a href="game.html">ASTEROID GAME</a></li>
+            <li><a href="about.html">ABOUT US</a></li>
+        </ul>
+    </li>
+</ul>
 
     <div>
         <div class="textbox1 center box">
             <h1>Beyond Our Skies</h1>
-            <video id="autoplay" muted playsinline loop width="400" height="350">
-                <source src="video/deep_space_loop.mp4" type="video/mp4">
-            </video>
+            <iframe class="boarder" id="player1" width="700" height="350" src="https://www.youtube.com/embed/dyW03qSMOn8?playlist=dyW03qSMOn8&loop=1&version=3&enablejsapi=1&autoplay=1&mute=1" title="Flight through the Solar System" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <script> document.getElementById('autoplay').play(); </script>
             <p>Space is a cold but amazing place. Very few people will get to experience what its like outside our planet Earth.</p>
             <p> Though we may not be able to experience it, tat shouldn't stop us from knowing about it. </p>
             <p> Join me as we go through some of the most amazing objects in our Solar System.</p>
@@ -144,7 +98,7 @@
                             <h2 class="footer-menu-name"> Quick Links</h2>
                             <ul id="menu-get-started" class="footer-menu-list">
                                 <li><a href=""></a></li>
-                                <li><a href="SolarSystem.html">SOLAR SYSTEM</a></li>
+                                <li><a href="solarsystem.html">SOLAR SYSTEM</a></li>
                                 <li><a href="planets.html"> -- Planets</a></li>
                                 <li><a href="sun.html"> -- Sun</a></li>
                                 <li><a href="gallery.html">PHOTO GALLERY</a></li>
@@ -203,9 +157,6 @@
 
 
                     </div>
-
-
-
 
             </footer>
         </div>

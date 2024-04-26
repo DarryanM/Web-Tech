@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="CSS/StyleSheet.css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
-<link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
-<script src="JS/javascript.js"></script>
-<script src="JS/wb.sitesearch.min.js"></script>
-
-
+    <title>The Sun</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="CSS/StyleSheet.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css" rel="stylesheet">
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <script src="JS/javascript.js"></script>
+    <script src="JS/wb.sitesearch.min.js"></script>
 </head>
 
 <body
@@ -28,6 +27,7 @@
             <! Menu Code taken from WYSIWYG >
 
 
+
     <header class="header top-header" style="background-image: url('images/header/pxfuel.jpg');">
         <div class="logo">
             <a href="index.html">
@@ -36,7 +36,7 @@
         </div>
         <div class="header-right">
             <a class="active" href="index.html">Home</a>
-            <a href="#contact">Contact</a>
+            <a href="credits.html">Credits</a>
             <a href="about.html">About</a>
             <br>
             <form  name="SiteSearch1_form" id="SiteSearch1_form" role="search" accept-charset="UTF-8" onsubmit="return searchPage(features)">
@@ -50,90 +50,45 @@
 
     </header>
 
-
-    <div class="row" >
-        <div class="col-3 col-s-3 menu" onfocusout="ShowObjectWithEffect('wb_menu1', 0, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 0, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 0, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 0, 'slideleft', 800);ShowObjectWithEffect('wb_menu5', 0, 'slideup', 800);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 800);return false;">
-            <div id="wb_MainMenu">
-                <a href="" onclick="ShowObjectWithEffect('wb_menu1', 1, 'slideleft', 500);ShowObjectWithEffect('wb_menu2', 1, 'slideleft', 600);ShowObjectWithEffect('wb_menu3', 1, 'slideleft', 700);ShowObjectWithEffect('wb_menu4', 1, 'slideleft', 800);return false;">
-                    <img class="hover" src="images/menu/img0001_hover.png" alt="" style="border-width:0;width:132px;height:45px;">
-                        <span class="default">
-                            <img src="images/menu/img0001.png" id="MainMenu" alt="" style="width:132px;height:45px;">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu1">
-                <a href="http://" onmouseover="ShowObjectWithEffect('wb_menu5', 1, 'slidedown', 500);ShowObjectWithEffect('wb_menu6', 1, 'slideup', 500);return false;">
-                    <img class="hover" src="images/menu/img0002_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0002.png" id="menu1" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu2">
-                <a href="gallery.html" onmousemove="ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);return false;">
-                    <img class="hover" src="images/menu/img0003_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0003.png" id="menu2" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu3">
-                <a href="game.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
-                    <img class="hover" src="images/menu/img0004_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                <span class="default wb_menu1_size">
-                    <img src="images/menu/img0004.png" id="menu3" alt="">
-                </span>
-                </a>
-            </div>
-            <div id="wb_menu4">
-                <a href="about.html" onmouseover="ShowObjectWithEffect('wb_menu5', 0, 'slideup', 500);ShowObjectWithEffect('wb_menu6', 0, 'slidedown', 500);return false;">
-                    <img class="hover" src="images/menu/img0005_hover.png" alt="" style="border-width:0;width:130px;height:40px;">
-                        <span class="default wb_menu1_size">
-                            <img src="images/menu/img0005.png" id="menu4" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu6">
-                <a href="sun.html">
-                    <img class="hover" src="images/menu/img0007_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
-                        <span class="default wb_menu2_size">
-                            <img src="images/menu/img0007.png" id="menu6" alt="">
-                        </span>
-                </a>
-            </div>
-            <div id="wb_menu5">
-                <a href="planets.html">
-                    <img class="hover" src="images/menu/img0008_hover.png" alt="" style="border-width:0;width:104px;height:38px;">
-                        <span class="default wb_menu2_size">
-                            <img src="images/menu/img0008.png" id="menu5" alt="">
-                        </span>
-                </a>
-            </div>
+     <div>
+        <ul class="top-level-menu">
+            <li>
+                <a href="index.html">HOME</a>
+                <ul class="second-level-menu">
+                    <li>
+                        <a href="solarsystem.html">SOLAR SYSTEM</a>
+                        <ul class="third-level-menu">
+                            <li><a href="planets.html">Planets</a></li>
+                            <li><a href="sun.html">Sun</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gallery.html">PHOTO GALLERY</a></li>
+                    <li><a href="game.html">ASTEROID GAME</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+            </li>
+        </ul>
     </div>
 
     <div>
         <div class="textbox1 center box">
-            <h1>THE SUN</h1>
-            <a href="href="#" onClick="window.open('https://solarsystem.nasa.gov/gltf_embed/2352%27/','SUN','resizable,height=260,width=370'); return false;"><img src="images/planets/sun.png" alt="SUN" width="240" height="200"></a>
-
-            <p> At the center of our Solar System is a star called <b>THE SUN</b>. The sun is the largest object in our solar system with a diameter of about 865,000 miles (1.4 million kilometers).
-                Some describe it as a "glowing sphere of hot gas". The sun is actually made up of gases and plasma. The Sun has a composition of about 73% Hydrogen, 25% Helium
-                <span class="yellow_emph">( which is formed by the constant fusing together of the hydrogen, through a process called <b>Nuclear Fusion</b>)</span>,
-                and the remaining 2% is made up of small amounts of Iron, Nickel, Oxygen, Silicon, Sulfur, Magnesium, Carbon, Neon, Calcium, and Chromium.
-                <br></p>
-            <br>
-            <p> Quick Sun Facts</p>
-            <p> &emsp;The Sun is the closest star to our planet. </p>
-            <p> &emsp;The Sun is about 4.5 billion years old. </p>
-            <p> &emsp;The sun warms our planet, provides us with light and is crucial to all life on Earth.</p>
-            <p> &emsp;The distance between the Sun and Earth is about 149.6 million kilometres or 93 million miles. </p>
-            <p> &emsp;The Sun’s light takes about 8.3 minutes to reach Earth. </p>
-            <p> &emsp;The Sun is around 15 million °C (27 million °F) at its core and 5,500°C (9932°F) on its surface.</p>
-            <p> &emsp;The Sun is so huge that it can it 1.3 million Earths within it</p>
-            <br>
+                <h1>THE SUN</h1><a href="href=" onclick="window.open('https://solarsystem.nasa.gov/gltf_embed/2352%27/','SUN','resizable,height=260,width=370'); return false;"><img src="images/planets/sun.png" alt="SUN" width="240" height="200"></a>
+                <p>At the center of our Solar System is a star called <b>THE SUN</b>.
+                The sun is the largest object in our solar system with a diameter of about 865,000 miles (1.4 million kilometers).
+                Some describe it as a <q>glowing sphere of hot gas</q>. The sun is actually made up of gases and plasma.
+                The Sun has a composition of about 73% Hydrogen, 25% Helium <span class="yellow_emph">( which is formed by the constant
+                fusing together of the hydrogen, through a process called <b>Nuclear Fusion</b>)</span>, and the remaining 2% is made up
+                of small amounts of Iron, Nickel, Oxygen, Silicon, Sulfur, Magnesium, Carbon, Neon, Calcium, and Chromium.<br></p><br>
+                <p>Quick Sun Facts</p>
+                <p> The Sun is the closest star to our planet.</p>
+                <p> The Sun is about 4.5 billion years old.</p>
+                <p> The sun warms our planet, provides us with light and is crucial to all life on Earth.</p>
+                <p> The distance between the Sun and Earth is about 149.6 million kilometres or 93 million miles.</p>
+                <p> The Sun’s light takes about 8.3 minutes to reach Earth.</p>
+                <p> The Sun is around 15 million °C (27 million °F) at its core and 5,500°C (9932°F) on its surface.</p>
+                <p> The Sun is so huge that it can it 1.3 million Earths within it</p><br>
+            </div>
         </div>
-
-    </div>
 
     <div class="pg-footer">
             <footer class="footer">
@@ -153,7 +108,7 @@
                             <h2 class="footer-menu-name"> Quick Links</h2>
                             <ul id="menu-get-started" class="footer-menu-list">
                                 <li><a href=""></a></li>
-                                <li><a href="SolarSystem.html">SOLAR SYSTEM</a></li>
+                                <li><a href="solarsystem.html">SOLAR SYSTEM</a></li>
                                 <li><a href="planets.html"> -- Planets</a></li>
                                 <li><a href="sun.html"> -- Sun</a></li>
                                 <li><a href="gallery.html">PHOTO GALLERY</a></li>
@@ -177,8 +132,10 @@
                         <br>
                         <p> Subscribe to Our Monthly Newsletter</p>
                         <div class="subscribe">
+                             <form action="?action=save" name="myform" method="post">
                             <input type="email" class="sub__email" placeholder="Enter your email address" />
                             <button class="sub__button">Submit</button>
+                            </form>
                         </div>
                     </div>
                     <div class="footer-content-column">
@@ -212,8 +169,6 @@
 
 
                     </div>
-
-
 
 
             </footer>

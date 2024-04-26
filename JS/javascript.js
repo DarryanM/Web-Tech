@@ -1,44 +1,5 @@
 
 
-Array.from(
-    document.querySelectorAll('.fancy-hover'),
-    function(el){
-
-        el.addEventListener('mousemove',function(e){
-            el.style.setProperty('--px', e.clientX - el.offsetLeft);
-            el.style.setProperty('--py', e.clientY - el.offsetTop);
-        });
-
-    });
-
-                const f = document.getElementById('form');
-            const q = document.getElementById('query');
-            const google = 'https://www.google.com/search?q=site%3A+';
-            const site = 'pagedart.com';
-
-            function submitted(event) {
-                event.preventDefault();
-                const url = google + site + '+' + q.value;
-                const win = window.open(url, '_blank');
-                win.focus();
-            }
-
-    function ShowObject(a,b){
-        var c=document.getElementById(a);
-        c&&(c.style.visibility=b?"visible":"hidden")
-    }
-
-
-    function ToggleHelper(a,b,c,d,e,g){
-        b="#"+b;var h={},k="horizontal vertical left right up down".split(" ");
-        for(i=0;6>i;i++){var l=d.indexOf(k[i]);
-        -1!=l&&(h={direction:k[i]},d=d.substring(0,l))}"hidden"==$(b).css("visibility")&&$(b).css("display","none").css("visibility","visible");
-        "undefined"!=typeof g&&(h.easing=g);1==a?0==e?$(b).toggle():$(b).toggle(d,h,e):""==d?c?$(b).css("display",""):$(b).css("display","none"):1==c?$(b).show(d,h,e):$(b).hide(d,h,e)
-    }
-
-    function ShowObjectWithEffect(a,b,c,d,e){
-        ToggleHelper(0,a,b,c,d,e)
-    }
 
 var features = '';
 function searchPage(features)
@@ -100,6 +61,7 @@ function SearchDatabase()
     this[database_length++] = new SearchPage("planets4.html", "URANUS", "One of the two Ice Giant Planets. Uranas is the 7th planet away from the sun Uranus is the seventh planet from the Sun, with a distance of around 1.78 billion miles or 2.9 billion kilometers away. Uranus has a diameter of 31,763 miles (51,118 kilometers), thus making it the 3rd Largest planet in our Solar System. It is about 4 times wider than Earth. With a speed of 15,290 miles per hour, It takes 17 hours to make a full roation and 84 Earth years (30,687 Earth days) to orbit the Sun, the longest amongst all the 8 planets. Sun light takes 2 hours and 40 minutes to get to Uranus. The atmosphere consists mainly of hydrogen and helium. The surface is significantly enriched in water, ammonia and methane. Amongst all the planets, Uranas has the coldest atmosphere.  ", "");
     this[database_length++] = new SearchPage("planets4.html", "NEPTUNE", "The Furtherest planet and the fourth largest planet in our solar system. Neptune also know to have very powerful winds. Neptune and Uranus are called the ICE GIANTS because they have extremely cold tempretures, as sunlight takes 4.16 hours or 250 minutes to reach neptune. Neptune's atmosphere is made up of helium and hydrogen with traces of methane. The planet’s surface is consists of hot dense fluid of “icy” materials (water, methane, and ammonia). Neptune is about four times wider than Earth with diameter of 49,528 km (30,775 miles). It takes about 16 hours for one rotation and 165 Earth years (60,190 Earth days) to orbit the Sun. ", "");
     this[database_length++] = new SearchPage("sun.html", "The SUN", "At the center of our Solar System is a star called THE SUN. The sun is the largest object in our solar system with a diameter of about 865,000 miles (1.4 million kilometers). Some describe it as a glowing sphere of hot gas. The sun is actually made up of gases and plasma. The Sun has a composition of about 73% Hydrogen, 25% Helium ( which is formed by the constant fusing together of the hydrogen, through a process called Nuclear Fusion), and the remaining 2% is made up of small amounts of Iron, Nickel, Oxygen, Silicon, Sulfur, Magnesium, Carbon, Neon, Calcium, and Chromium. Quick Sun Facts. The Sun is the closest star to our planet. The Sun is about 4.5 billion years old. The sun warms our planet, provides us with light and is crucial to all life on Earth. The distance between the Sun and Earth is about 149.6 million kilometres or 93 million miles. The Sun’s light takes about 8.3 minutes to reach Earth. The Sun is around 15 million °C (27 million °F) at its core and 5,500°C (9932°F) on its surface. The Sun is so huge that it can it 1.3 million Earths within it.  ", "");
+    this[database_length++] = new SearchPage("solarsystem.html", "SOLAR SYSTEM", "Our solar system is made up of: One Star: The SUN Eight Planets: Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. Atleast 290 Moons Five Dwarf Planets: Pluto, Ceres, Makemake, Haumea, and Eris and millions of asteroids, comets, and meteoroids. All of which are bound together by the force of gravity. Our solar System is located within the Milky Way Galaxy. It's exact location is in the Orion Arm, an outter spiral arm of the Milky Way Galaaxy. Travelling around at speeds of 515,000 mph or 828,000 kph, it is estimated that our solar system takes 230 million years to complete one orbit around the galaxy center. Come Along as we explore the wonders of our Solar System.  ", "");
 
     return this;
 }
@@ -206,3 +168,23 @@ function closePic12() {
     document.getElementById("overlay12").style.width = "0%";
 }
 
+
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+            }
+        }
+    }
+}

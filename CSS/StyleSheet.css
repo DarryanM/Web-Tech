@@ -419,6 +419,12 @@ p {
     text-align: center;
 }
 
+.left {
+
+    padding: 10px;
+    text-align: center;
+}
+
 
 .box {
     border-top: #ccc 2px solid;

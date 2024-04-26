@@ -414,8 +414,9 @@ p {
 
 
 .center {
-    border: 3px solid green;
+
     padding: 10px;
+    text-align: center;
 }
 
 
@@ -499,7 +500,7 @@ p {
 
 .top-level-menu li:hover > ul
 {
-    /* On hover, display the next level's menu */
+ /* On hover, display the next level's menu */
     display: inline;
 }
 
@@ -513,12 +514,11 @@ p {
     text-decoration: none;
     padding: 0 0 0 5px;
 
-    /* Make the link cover the entire list item-container */
+
     display: block;
     line-height: 30px;
 }
 .top-level-menu a:hover { color: #000000; }
-
 
 
 

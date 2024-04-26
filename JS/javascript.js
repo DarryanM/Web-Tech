@@ -168,23 +168,22 @@ function closePic12() {
     document.getElementById("overlay12").style.width = "0%";
 }
 
-
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+function openthankyou() {
+    document.getElementById("overlay13").style.width = "100%";
+}
+function closesignUp() {
+    document.getElementById("overlay13").style.width = "0%";
 }
 
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
+function validateEmail(emailfield){
+        var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+
+        if (reg.test(emailfield.value) == false)
+        {
+            alert('Invalid Email Address');
+            return false;
         }
-    }
+        document.getElementById("overlay13").style.width = "100%";
+        return true;
 }
+

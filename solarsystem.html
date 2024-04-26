@@ -14,18 +14,7 @@
     <script src="JS/wb.sitesearch.min.js"></script>
 </head>
 
-<body
-    class="bgImage5"
-    onload="ShowObject('wb_menu1', 0);
-            ShowObject('wb_menu2', 0);
-            ShowObject('wb_menu3', 0);
-            ShowObject('wb_menu4', 0);
-            ShowObject('wb_menu5', 0);
-            ShowObject('wb_menu6', 0);
-            return false;
-            init()" >
-            <! Menu Code taken from WYSIWYG >
-
+<body class="bgImage5">
 
     <header class="header top-header" style="background-image: url('images/header/pxfuel.jpg');">
         <div class="logo">
@@ -81,7 +70,7 @@
             <p> and millions of <span class="yellow_emph"><b>asteroids, comets, and meteoroids.</b></span></p>
             <br>
             <p> All of which are bound together by the force of gravity. Our solar System is located within the <span class="yellow_emph"><b>Milky Way Galaxy</b></span>.
-                It's exact location is in the <q>Orion Arm</q>, an outter spiral arm of the Milky Way Galaaxy. Travelling around at speeds of 515,000 mph or 828,000 kph,
+                It's exact location is in the "Orion Arm", an outter spiral arm of the Milky Way Galaaxy. Travelling around at speeds of 515,000 mph or 828,000 kph,
                 it is estimated that our solar system takes 230 million years to complete one orbit around the galaxy center.</p>
             <br>
             <p> Come Along as we explore the wonders of our Solar System.</p>
@@ -131,8 +120,12 @@
                         <br>
                         <p> Subscribe to Our Monthly Newsletter</p>
                         <div class="subscribe">
-                            <input type="email" class="sub__email" placeholder="Enter your email address" />
-                            <button class="sub__button">Submit</button>
+                            <input type="email" id="emailfield" class="sub__email" placeholder="Enter your email address" />
+                            <button class="sub__button" onclick="validateEmail(emailfield)">Submit</button>
+                        </div>
+                        <div id="overlay13" class="overlay">    <P class="yellow_emph center"> THANK YOU FOR SIGNING UP TO OUR NEWSLETTER</P>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closesignUp()">&times;</a>
+                            <div class="overlay-content"> <img src="images/thankyou.gif" alt="" width= "100%"; height= "50%"> </div>
                         </div>
                     </div>
                     <div class="footer-content-column">

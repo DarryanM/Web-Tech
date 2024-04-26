@@ -14,17 +14,7 @@
     <script src="JS/wb.sitesearch.min.js"></script>
 </head>
 
-<body
-    class="bgImage3"
-    onload="ShowObject('wb_menu1', 0);
-            ShowObject('wb_menu2', 0);
-            ShowObject('wb_menu3', 0);
-            ShowObject('wb_menu4', 0);
-            ShowObject('wb_menu5', 0);
-            ShowObject('wb_menu6', 0);
-            return false;
-            init()" >
-            <! Menu Code taken from WYSIWYG >
+<body class="bgImage3">
 
 
     <header class="header top-header" style="background-image: url('images/header/pxfuel.jpg');">
@@ -95,7 +85,7 @@
                <p style="font-size:20px; font-weight:bold;">NEPTUNE</p>
                <p style="display: flex;"><a href="href=" onclick="window.open('https://solarsystem.nasa.gov/gltf_embed/2364/','NEPTUNE','resizable,height=260,width=370'); return false;"><img src="images/planets/neptune.png" alt="Planet Neptune" width="255" height="180"></a><br>
                     The Furtherest planet and the fourth largest planet in our solar system. Neptune also know to have very powerful winds. Neptune and Uranus are
-                    called the <q>ICE GIANTS</q> because they have extremely cold tempretures, as sunlight takes 4.16 hours or 250 minutes to reach neptune. Neptune's
+                    called the "ICE GIANTS" because they have extremely cold tempretures, as sunlight takes 4.16 hours or 250 minutes to reach neptune. Neptune's
                     atmosphere is made up of helium and hydrogen with traces of methane. The planet’s surface is consists of hot dense fluid of “icy” materials
                     (water, methane, and ammonia). Neptune is about four times wider than Earth with diameter of 49,528 km (30,775 miles). It takes about 16 hours for
                     one rotation and 165 Earth years (60,190 Earth days) to orbit the Sun.
@@ -152,8 +142,12 @@
                         <br>
                         <p> Subscribe to Our Monthly Newsletter</p>
                         <div class="subscribe">
-                            <input type="email" class="sub__email" placeholder="Enter your email address" />
-                            <button class="sub__button">Submit</button>
+                            <input type="email" id="emailfield" class="sub__email" placeholder="Enter your email address" />
+                            <button class="sub__button" onclick="validateEmail(emailfield)">Submit</button>
+                        </div>
+                        <div id="overlay13" class="overlay">    <P class="yellow_emph center"> THANK YOU FOR SIGNING UP TO OUR NEWSLETTER</P>
+                            <a href="javascript:void(0)" class="closebtn" onclick="closesignUp()">&times;</a>
+                            <div class="overlay-content"> <img src="images/thankyou.gif" alt="" width= "100%"; height= "50%"> </div>
                         </div>
                     </div>
                     <div class="footer-content-column">
